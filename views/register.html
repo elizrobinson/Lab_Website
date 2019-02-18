@@ -1,0 +1,147 @@
+<!-- Registration Page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Register Page</title>
+	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="../resources/css/my_style.css" rel="stylesheet">
+  </head>
+  <body>
+	
+	<img src="../resources/img/beproudcapaabanner.jpg" class="img-fluid" alt="Registration Page Banner for CU Football">
+    <br>
+	<br>
+	<div class="container">
+		<form action="home.html">
+			<!--
+				Todo: Create a form with the following fields:
+					1. Name Text Field
+					2. Email Text Field
+					3. Password Text Field
+					4. Password Confirmation Text Field
+					5. Email Text Field
+					6. CU Boulder Alumni Radio Button
+					7. CU Boulder Student Radio Button
+					8. CU Boulder Undergrad/Grad Radio Button
+					9. Undergraduate Select (Freshman-Senior)
+					10. Graduate Select (MA, MBA, PhD)
+					11. Submit Button (links to home page)
+
+			-->
+			<div class="form-group row">
+				<label for="input_name" class="col-sm-2 col-form-label">Full Name:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="input_name" placeholder="Enter Name">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="input_email" class="col-sm-2 col-form-label">Email Address:</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="input_email" placeholder="Enter Email">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="input_password" class="col-sm-2 col-form-label">Password:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="input_password" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="input_confirmpassword" class="col-sm-2 col-form-label">Confirm Password:</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="input_confirmpassword" placeholder="Confirm Password">
+				</div>
+			</div>
+
+			<fieldset class="form-group">
+			    <div class="row">
+			      <legend class="col-form-label col-sm-2 pt-0">CU Boulder Alumni</legend>
+			      <div class="col-sm-10">
+			        <div class="form-check">
+			          <input class="form-check-input" type="radio" name="alumni_choice" id="alumni_choice1" value="Yes">
+			          <label class="form-check-label" for="alumni_choice1">
+			            Yes
+			          </label>
+			        </div>
+			        <div class="form-check">
+			          <input class="form-check-input" type="radio" name="alumni_choice" id="alumni_choice2" value="No">
+			          <label class="form-check-label" for="alumni_choice2">
+			            No
+			          </label>
+			        </div>
+			      </div>
+			    </div>
+			  </fieldset>
+
+
+			<fieldset class="form-group">
+			    <div class="row">
+			      <legend class="col-form-label col-sm-2 pt-0">CU Boulder Student</legend>
+			      <div class="col-sm-10">
+			        <div class="form-check">
+			          <input class="form-check-input" type="radio" name="student_choice" id="student_choice1" value="Yes">
+			          <label class="form-check-label" for="student_choice1">
+			            Yes
+			          </label>
+			        </div>
+			        <div class="form-check">
+			          <input class="form-check-input" type="radio" name="student_choice" id="student_choice2" value="No">
+			          <label class="form-check-label" for="student_choice2">
+			            No
+			          </label>
+			        </div>
+			      </div>
+			    </div>
+			  </fieldset>
+
+			  <fieldset class="form-group">
+				<div class="row">
+					<legend class="col-form-label col-sm-2 pt-0">Student Status</legend>
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="status_choice" id="status_choice1" value="option1" checked>
+							<label class="form-check-label" for="status_choice1">
+							Undergrad
+							</label>
+						</div>
+
+				        <div class="form-group">
+					      <select name="status_choice" id="status_choice2" class="form-control">
+					        <option selected>Select Student Status</option>
+							  <option value="option2a">Freshman</option>
+							  <option value="option2b">Sophomore</option>
+							  <option value="option2c">Junior</option>
+							  <option value="option2d">Senior</option>
+					      </select>
+					    </div>
+
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="status_choice" id="status_choice3" value="option3">
+							<label class="form-check-label" for="status_choice2">Grad
+							</label>
+						</div>
+					
+						<div class="form-group">
+							<select name="status_choice" id="status_choice4" class="form-control">
+								<option selected>Select Student Status</option>
+								<option value="option4a">MA</option>
+								<option value="option4b">MBA</option>
+								<option value="option4c">PhD</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<input type="submit" value="submit" class="btn btn-primary btn-block">
+		</form>
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
